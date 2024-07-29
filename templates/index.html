@@ -2,23 +2,84 @@
 <html>
 <head>
     <title>Fish Market Prediction</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #008080;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #008080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #005f5f;
+        }
+    </style>
 </head>
 <body>
-    <h1>Fish Market Prediction</h1>
-    <form action="/predict" method="post">
-        <label for="length1">Length 1:</label>
-        <input type="text" id="length1" name="length1"><br>
-        <label for="length2">Length 2:</label>
-        <input type="text" id="length2" name="length2"><br>
-        <label for="length3">Length 3:</label>
-        <input type="text" id="length3" name="length3"><br>
-        <label for="height">Height:</label>
-        <input type="text" id="height" name="height"><br>
-        <label for="width">Width:</label>
-        <input type="text" id="width" name="width"><br>
-        <label for="weight">Weight:</label>
-        <input type="text" id="weight" name="weight"><br>
-        <input type="submit" value="Predict">
-    </form>
+    <div class="container">
+        <h1>Fish Market Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="length1">Length 1:</label>
+            <input type="text" id="length1" name="length1">
+            
+            <label for="length2">Length 2:</label>
+            <input type="text" id="length2" name="length2">
+            
+            <label for="length3">Length 3:</label>
+            <input type="text" id="length3" name="length3">
+            
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height">
+            
+            <label for="width">Width:</label>
+            <input type="text" id="width" name="width">
+            
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight">
+            
+            <input type="submit" value="Predict">
+        </form>
+    </div>
 </body>
 </html>
